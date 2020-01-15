@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+
+
+
+
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/timeA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="#FF0000"
+                android:padding="16dp"
+                android:text="Protetor vermelho"
+                android:textSize="14sp"
+                android:fontFamily="sans-serif"/>
+
+            <TextView
+                android:id="@+id/placarVermelho"
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:padding="4dp"
+                android:text="0"
+                android:textColor="#DF0101"
+                android:textSize="120sp" />
+
+            <Button
+                android:background="@drawable/button_move_red"
+                android:id="@+id/tresPontosVermelho"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="+ 3 Pontuação cabeça"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:background="@drawable/button_move_red"
+                android:id="@+id/doisPontosVermelho"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="+2 Puntuação colete"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/menosUmPontoVermelho"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/button_move_red"
+                android:text="Tirar 1 Ponto"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/darker_gray"
+            android:layout_marginTop="16dp"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/timeB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:padding="16dp"
+                android:text="Protetor Azul"
+                android:textColor="#0101DF"
+                android:textSize="14sp" />
+
+            <TextView
+
+                android:id="@+id/placarAzul"
+                android:textColor="#0101DF"
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:gravity="center"
+                android:padding="4dp"
+                android:text="0"
+                android:textSize="120sp"
+                android:fontFamily="sans-serif"/>
+
+            <Button
+                android:background="@drawable/button_move_restart"
+                android:id="@+id/tresPontosAzul"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="+3 pontuação cabeça"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:background="@drawable/button_move_restart"
+                android:id="@+id/doisPontosAzul"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="+2 PONTUAÇÃO COLETE"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/MenosUmPontoAzul"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/button_move_restart"
+                android:text="TIRAR UM PONTO"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:textColor="#FFFFFF"
+        android:background="@drawable/button_move_restart"
+        android:id="@+id/reiniciarPartida"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Reiniciar Partida"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="32dp"/>
+</RelativeLayout>
