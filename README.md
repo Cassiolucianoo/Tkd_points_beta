@@ -2,6 +2,14 @@
 
 Aplicativo simples para gerenciamento de pontuação de atletas de taekwondo.
 
-# Contato
+# Activity
+- splash screen 
+- pontuação dos atletas
 
+
+
+
+
+
+# Contato
 - Email: cassiolucianodasilva@gmail.com
